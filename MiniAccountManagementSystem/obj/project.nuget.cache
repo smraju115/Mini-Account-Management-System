@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JzwE5+gsYPw=",
+  "dgSpecHash": "TEzoC1qjYNU=",
   "success": true,
-  "projectFilePath": "F:\\Qtec\\MiniAccountManagementSystem\\MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj",
+  "projectFilePath": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\US\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\US\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

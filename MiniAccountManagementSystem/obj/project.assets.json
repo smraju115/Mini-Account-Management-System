@@ -4458,11 +4458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Qtec\\MiniAccountManagementSystem\\MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj",
+      "projectUniqueName": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj",
       "projectName": "MiniAccountManagementSystem",
-      "projectPath": "F:\\Qtec\\MiniAccountManagementSystem\\MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj",
+      "projectPath": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj",
       "packagesPath": "C:\\Users\\US\\.nuget\\packages\\",
-      "outputPath": "F:\\Qtec\\MiniAccountManagementSystem\\MiniAccountManagementSystem\\obj\\",
+      "outputPath": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

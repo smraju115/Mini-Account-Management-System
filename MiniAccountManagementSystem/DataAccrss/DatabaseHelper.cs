@@ -58,5 +58,101 @@ namespace MiniAccountManagementSystem.DataAccrss
                 cmd.ExecuteNonQuery();
             }
         }
+
+
+        public ChartOfAccountModel GetById(int id)
+        {
+            ChartOfAccountModel account = null;
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("sp_ManageChartOfAccounts", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Action", "GETBYID");
+                cmd.Parameters.AddWithValue("@AccountID", id);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    account = new ChartOfAccountModel
+                    {
+                        AccountID = Convert.ToInt32(reader["AccountID"]),
+                        AccountName = reader["AccountName"].ToString(),
+                        ParentAccountID = reader["ParentAccountID"] as int?,
+                        AccountType = reader["AccountType"].ToString(),
+
+                    };
+                }
+            }
+
+            return account;
+
+        }
+
+
+        public void UpdateChartAccount(ChartOfAccountModel model)
+        {
+            using(SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("sp_ManageChartOfAccounts", conn);
+                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Action", "UPDATE");
+                cmd.Parameters.AddWithValue("@AccountID", model.AccountID);
+                cmd.Parameters.AddWithValue("@AccountName", model.AccountName);
+                cmd.Parameters.AddWithValue("@ParentAccountID", model.ParentAccountID ??(object)DBNull.Value );
+                cmd.Parameters.AddWithValue("@AccountType", model.AccountType);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+
+            }
+        }
+
+
+        public void DeleteChartAccount(int id)
+        {
+            using(SqlConnection conn =new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("sp_ManageChartOfAccounts", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Action", "DELETE");
+                cmd.Parameters.AddWithValue("@AccountID", id);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -1,12 +1,43 @@
 ﻿@page
 @model MiniAccountManagementSystem.Pages.ChartOfAccounts.IndexModel
 @{
+    ViewData["Title"] = "Chart of Accounts";
 }
 
 
 <h2>Chart of Accounts</h2>
 
 <form method="post">
+    <input type="hidden" asp-for="Account.AccountID" />
+    <label>Account Name:</label>
+    <input asp-for="Account.AccountName" class="form-control" required />
+
+    <label>Account Type:</label>
+    <select asp-for="Account.AccountType" class="form-control">
+        <option>Asset</option>
+        <option>Liability</option>
+        <option>Income</option>
+        <option>Expense</option>
+        <option>Equity</option>
+    </select>
+
+    <label>Parent Account ID:</label>
+    <input asp-for="Account.ParentAccountID" class="form-control" />
+
+    <br />
+
+    @if (Model.Account.AccountID > 0)
+    {
+        <button type="submit" asp-page-handler="Update" class="btn btn-success">Update</button>
+        <a href="/ChartOfAccounts" class="btn btn-secondary">Cancel</a>
+    }
+    else
+    {
+        <button type="submit" class="btn btn-primary">Add</button>
+    }
+</form>
+
+@* <form method="post">
     <div class="form-group">
         <label>Account Name:</label>
         <input asp-for="Account.AccountName" class="form-control" required />
@@ -29,7 +60,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary mt-2">Add Account</button>
-</form>
+</form> *@
 
 <hr />
 
@@ -41,6 +72,7 @@
             <th>Type</th>
             <th>Parent</th>
             <th>Created</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -52,6 +84,11 @@
                 <td>@item.AccountType</td>
                 <td>@item.ParentAccountID</td>
                 <td>@item.CreatedDate.ToShortDateString()</td>
+                <td>
+                    <a asp-page-handler="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-page-handler="Delete" asp-route-id="@item.AccountID" class="btn btn-sm btn-danger"
+                       onclick="return confirm('Are you sure to delete this account?');">Delete</a>
+                </td>
             </tr>
         }
     </tbody>

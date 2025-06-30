@@ -1,0 +1,60 @@
+﻿@page
+@model MiniAccountManagementSystem.Pages.Voucher.IndexModel
+@{
+    ViewData["Title"] = "Voucher List";
+}
+
+<h3>Voucher List</h3>
+
+<form method="post" class="mb-3">
+    <div class="row">
+        <div class="col">
+            <label>From Date</label>
+            <input asp-for="FromDate" class="form-control" type="date" />
+        </div>
+        <div class="col">
+            <label>To Date</label>
+            <input asp-for="ToDate" class="form-control" type="date" />
+        </div>
+        <div class="col">
+            <label>Voucher Type</label>
+            <select asp-for="VoucherType" class="form-control">
+                <option value="">All</option>
+                <option>Journal</option>
+                <option>Payment</option>
+                <option>Receipt</option>
+            </select>
+        </div>
+        <div class="col">
+            <label>&nbsp;</label>
+            <button type="submit" class="btn btn-primary form-control">Search</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Reference</th>
+            <th>Type</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var v in Model.VoucherList)
+        {
+            <tr>
+                <td>@v.VoucherID</td>
+                <td>@v.VoucherDate.ToShortDateString()</td>
+                <td>@v.ReferenceNo</td>
+                <td>@v.VoucherType</td>
+                <td>
+                    <a class="btn btn-sm btn-secondary">View</a>
+                    <a class="btn btn-sm btn-success">Print</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

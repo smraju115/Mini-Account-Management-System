@@ -1,0 +1,39 @@
+﻿@page "{id:int}"
+@model MiniAccountManagementSystem.Pages.Voucher.ViewModel
+@{
+    ViewData["Title"] = "View Voucher";
+}
+
+<h3>Voucher Details</h3>
+
+<table class="table table-bordered w-50">
+    <tr><th>Voucher No:</th><td>@Model.Header.VoucherID</td></tr>
+    <tr><th>Date:</th><td>@Model.Header.VoucherDate.ToShortDateString()</td></tr>
+    <tr><th>Type:</th><td>@Model.Header.VoucherType</td></tr>
+    <tr><th>Reference:</th><td>@Model.Header.ReferenceNo</td></tr>
+</table>
+
+<h4>Entries</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Account</th>
+            <th>Debit</th>
+            <th>Credit</th>
+            <th>Remarks</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Lines)
+        {
+            <tr>
+                <td>@item.AccountName</td>
+                <td>@item.DebitAmount</td>
+                <td>@item.CreditAmount</td>
+                <td>@item.Remarks</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button onclick="window.print()" class="btn btn-primary">🖨️ Print</button>

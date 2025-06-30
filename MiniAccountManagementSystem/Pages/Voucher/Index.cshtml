@@ -51,8 +51,7 @@
                 <td>@v.ReferenceNo</td>
                 <td>@v.VoucherType</td>
                 <td>
-                    <a class="btn btn-sm btn-secondary">View</a>
-                    <a class="btn btn-sm btn-success">Print</a>
+                    <a asp-page="/Voucher/View" asp-route-id="@v.VoucherID" class="btn btn-sm btn-secondary">View</a>
                 </td>
             </tr>
         }

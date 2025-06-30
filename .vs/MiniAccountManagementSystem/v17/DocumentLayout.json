@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "F:\\Qtec\\Mini-Account-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\view.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\view.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\models\\vouchermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\pages\\voucher\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|solutionrelative:miniaccountmanagementsystem\\pages\\voucher\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA2AEC71-323F-45CD-9D83-05AA7E15F51B}|MiniAccountManagementSystem\\MiniAccountManagementSystem.csproj|f:\\qtec\\mini-account-management-system\\miniaccountmanagementsystem\\models\\chartofaccountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Shared\\_Layout.cshtml",
@@ -67,8 +75,7 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-30T16:45:58.218Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -76,7 +83,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "View.cshtml.cs",
+              "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml.cs",
+              "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml.cs",
+              "ToolTip": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml.cs",
+              "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T19:30:12.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml",
+              "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml",
+              "ToolTip": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml",
+              "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\Voucher\\View.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-30T19:30:06.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Index.cshtml",
@@ -84,12 +117,11 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T19:06:15.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T19:06:15.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Voucher\\Index.cshtml.cs",
@@ -102,20 +134,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\Index.cshtml",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Voucher\\Index.cshtml",
               "ToolTip": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\Index.cshtml",
               "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\Voucher\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-30T19:03:56.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\Create.cshtml",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Voucher\\Create.cshtml",
@@ -128,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Create.cs",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\Voucher\\Create.cs",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\Voucher\\Create.cs",
@@ -136,12 +168,11 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\Voucher\\Create.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAMwB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T18:26:49.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T18:26:49.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "VoucherModel.cs",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Models\\VoucherModel.cs",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Models\\VoucherModel.cs",
@@ -149,12 +180,11 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\Models\\VoucherModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T18:24:38.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T18:24:38.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\ChartOfAccounts\\Index.cshtml",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\ChartOfAccounts\\Index.cshtml",
@@ -162,12 +192,11 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\ChartOfAccounts\\Index.cshtml",
               "ViewState": "AgIAAEAAAAAAAAAAAAAowF4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T16:45:54.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T16:45:54.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Index.cs",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Pages\\ChartOfAccounts\\Index.cs",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Pages\\ChartOfAccounts\\Index.cs",
@@ -175,12 +204,11 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\Pages\\ChartOfAccounts\\Index.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T16:45:53.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T16:45:53.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ChartOfAccountModel.cs",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\Models\\ChartOfAccountModel.cs",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\Models\\ChartOfAccountModel.cs",
@@ -188,12 +216,11 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\Models\\ChartOfAccountModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T16:45:47.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T16:45:47.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "F:\\Qtec\\Mini-Account-Management-System\\MiniAccountManagementSystem\\DataAccrss\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "MiniAccountManagementSystem\\DataAccrss\\DatabaseHelper.cs",
@@ -201,8 +228,7 @@
               "RelativeToolTip": "MiniAccountManagementSystem\\DataAccrss\\DatabaseHelper.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAQwGkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T16:45:45.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T16:45:45.596Z"
             }
           ]
         }

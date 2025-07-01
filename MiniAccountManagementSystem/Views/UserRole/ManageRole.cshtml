@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@{
+    var user = ViewBag.User as IdentityUser;
+    var allRoles = ViewBag.AllRoles as List<IdentityRole>;
+    var userRoles = ViewBag.UserRoles as IList<string>;
+    ViewData["Title"] = "ManageRole";
+}
+
+<h2>Manage Role for @user.Email</h2>
+
+<ul>
+    @foreach (var role in allRoles)
+    {
+        <li>
+            @role.Name
+            @if (userRoles.Contains(role.Name))
+            {
+                <form asp-action="RemoveRole" method="post" style="display:inline">
+                    <input type="hidden" name="userId" value="@user.Id" />
+                    <input type="hidden" name="role" value="@role.Name" />
+                    <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+                </form>
+            }
+            else
+            {
+                <form asp-action="AssignRole" method="post" style="display:inline">
+                    <input type="hidden" name="userId" value="@user.Id" />
+                    <input type="hidden" name="role" value="@role.Name" />
+                    <button type="submit" class="btn btn-sm btn-success">Assign</button>
+                </form>
+            }
+        </li>
+    }
+</ul>
+

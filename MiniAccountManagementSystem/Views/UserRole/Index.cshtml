@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityUser>
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml"; //Bind Layout
+    ViewData["Title"] = "Index";
+}
+
+<h2>User List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Manage Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>
+                    <a asp-action="ManageRole" asp-route-userId="@user.Id" class="btn btn-primary">Manage Role</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

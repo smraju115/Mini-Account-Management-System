@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MiniAccountManagementSystem.Data;
+using MiniAccountManagementSystem.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +21,12 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
  .AddRoles<IdentityRole>()
  .AddEntityFrameworkStores<ApplicationDbContext>();
 
+
+builder.Services.AddScoped<PageAccessService>(); //call service
+
+
 builder.Services.AddRazorPages();
+
 
 var app = builder.Build();
 
@@ -51,7 +57,9 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapRazorPages();
+    pattern: "{controller=Home}/{action=Index}/{id?}");     // MVC Controllers (UserRoleController)
+
+
+app.MapRazorPages(); // Razor Pages
 
 app.Run();

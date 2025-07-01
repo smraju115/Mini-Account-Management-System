@@ -1,29 +1,44 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MiniAccountManagementSystem.DataAccrss;
 using MiniAccountManagementSystem.Models;
+using MiniAccountManagementSystem.Services;
 
 namespace MiniAccountManagementSystem.Pages.ChartOfAccounts
 {
-    public class IndexModel : PageModel
+    public class IndexModel : BasePageModel
     {
         private readonly DatabaseHelper _db;
 
-        public IndexModel(IConfiguration config)
+        public IndexModel(IConfiguration config, PageAccessService accessService, UserManager<IdentityUser> userManager) : base(accessService, userManager)
         {
             _db = new DatabaseHelper(config);
         }
 
         [BindProperty]
-        public ChartOfAccountModel Account { get; set; } = new(); // null problem solve
+        public ChartOfAccountModel Account { get; set; } = new(); // instence make null problem solve
 
         public List<ChartOfAccountModel> AccountsList { get; set; }
 
-        public void OnGet()
+
+
+        public async Task<IActionResult> OnGetAsync()
         {
-            Account = new(); // optional fallback
+            if (!await CheckPageAccessAsync("ChartOfAccounts.Index"))
+                return RedirectToPage("/AccessDenied");
+
+            Account = new();
             AccountsList = _db.GetChartOfAccounts();
+
+            return Page();
         }
+        //public void OnGet()
+        //{
+
+        //    Account = new(); // optional fallback
+        //    AccountsList = _db.GetChartOfAccounts();
+        //}
 
         public IActionResult OnPost()
         {

@@ -5,6 +5,7 @@
     var allRoles = ViewBag.AllRoles as List<IdentityRole>;
     var userRoles = ViewBag.UserRoles as IList<string>;
     ViewData["Title"] = "ManageRole";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <h2>Manage Role for @user.Email</h2>

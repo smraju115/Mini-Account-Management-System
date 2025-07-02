@@ -14,6 +14,9 @@ namespace MiniAccountManagementSystem.Services
 
         public bool HasAccess(string roleName, string pageName)
         {
+            if (string.IsNullOrEmpty(roleName) || string.IsNullOrEmpty(pageName))
+                return false;
+
             using (var conn = new SqlConnection(_config.GetConnectionString("DefaultConnection")))
             {
                 using (var cmd = new SqlCommand("sp_GetPageAccess", conn))
@@ -23,8 +26,8 @@ namespace MiniAccountManagementSystem.Services
                     cmd.Parameters.AddWithValue("@PageName", pageName);
 
                     conn.Open();
-                    int result = (int)cmd.ExecuteScalar();
-                    return result > 0;
+                    var result = cmd.ExecuteScalar();
+                    return Convert.ToInt32(result) > 0;
                 }
             }
         }

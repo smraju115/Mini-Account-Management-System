@@ -64,16 +64,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnRPZkFjY291bnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Pages/Shared/_LoginPartial.cshtml]
@@ -110,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Views/UserRole/ManageRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVcTWFuYWdlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Qtec/Mini-Account-Management-System/MiniAccountManagementSystem/Pages/Shared/_Layout.cshtml]

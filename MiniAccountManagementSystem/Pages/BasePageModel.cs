@@ -18,8 +18,15 @@ namespace MiniAccountManagementSystem.Pages
         public async Task<bool> CheckPageAccessAsync(string pageName)
         {
             var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+                return false; // ইউজার লগইন না করলে AccessDenied দেখাবে
+
             var roles = await _userManager.GetRolesAsync(user);
             var role = roles.FirstOrDefault();
+
+            if (string.IsNullOrEmpty(role))
+                return false; // রোল না থাকলেও Denied
 
             return _accessService.HasAccess(role, pageName);
         }

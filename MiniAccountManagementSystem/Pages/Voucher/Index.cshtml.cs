@@ -1,16 +1,18 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
+using MiniAccountManagementSystem.Services;
 using System.Data;
 
 namespace MiniAccountManagementSystem.Pages.Voucher
 {
-    public class IndexModel : PageModel
+    public class IndexModel : BasePageModel
     {
         private readonly IConfiguration _config;
         private readonly string _connectionString;
 
-        public IndexModel(IConfiguration config)
+        public IndexModel(IConfiguration config, PageAccessService accessService, UserManager<IdentityUser> userManager): base(accessService, userManager)
         {
             _config = config;
             _connectionString = _config.GetConnectionString("DefaultConnection");
@@ -27,9 +29,16 @@ namespace MiniAccountManagementSystem.Pages.Voucher
         [BindProperty]
         public string? VoucherType { get; set; }
 
-        public void OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
+            //var result = await CheckAndRedirect("Voucher.Index");
+            //if (result != null)
+            //{
+            //    return result;
+            //}
+
             LoadVouchers();
+            return Page();
         }
 
         public void OnPost()

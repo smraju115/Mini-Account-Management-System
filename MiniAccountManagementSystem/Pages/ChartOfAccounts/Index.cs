@@ -25,8 +25,16 @@ namespace MiniAccountManagementSystem.Pages.ChartOfAccounts
 
         public async Task<IActionResult> OnGetAsync()
         {
-            if (!await CheckPageAccessAsync("ChartOfAccounts.Index"))
-                return RedirectToPage("/AccessDenied");
+            //if (!await CheckPageAccessAsync("ChartOfAccounts.Index"))
+            //    return RedirectToPage("/AccessDenied"); manual system 
+
+
+            //daynamic call
+            var result = await CheckAndRedirect("ChartOfAccounts.Index");
+            if(result != null)
+            {
+                return result;
+            }
 
             Account = new();
             AccountsList = _db.GetChartOfAccounts();

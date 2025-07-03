@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MiniAccountManagementSystem.Services;
 
@@ -20,15 +21,26 @@ namespace MiniAccountManagementSystem.Pages
             var user = await _userManager.GetUserAsync(User);
 
             if (user == null)
-                return false; // ইউজার লগইন না করলে AccessDenied দেখাবে
+                return false; // AccessDenied when user is not loged in.
 
             var roles = await _userManager.GetRolesAsync(user);
             var role = roles.FirstOrDefault();
 
             if (string.IsNullOrEmpty(role))
-                return false; // রোল না থাকলেও Denied
+                return false; // Denied when role is empty.
 
             return _accessService.HasAccess(role, pageName);
         }
+
+
+        // Daynamic Method For Page Access Denied
+        public async Task<IActionResult> CheckAndRedirect(string pageName)
+        {
+            if (!await CheckPageAccessAsync(pageName))
+                return RedirectToPage("/AccessDenied");
+
+            return null!;
+        }
+
     }
 }

@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+
+@{
+    ViewData["Title"] = "Roles";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>Assign Roles With Page Access</h2>
+<form asp-action="Create" method="post">
+    <input type="text" name="roleName" required placeholder="New Role Name" />
+    <button type="submit" class="btn btn-success">Add Role</button>
+</form>
+<table class="table">
+    <thead><tr><th>Role</th><th>Action</th> <th>Page Access</th> </tr></thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.Name</td>
+                <td>
+                    <form asp-action="Delete" method="post" style="display:inline">
+                        <input type="hidden" name="roleId" value="@role.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+                <td>
+                    <a asp-action="Manage" asp-controller="PageAccess" asp-route-roleName="@role.Name" class="btn btn-primary"> Manage Access </a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

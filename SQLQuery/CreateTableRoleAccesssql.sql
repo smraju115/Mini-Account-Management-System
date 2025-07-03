@@ -1,0 +1,5 @@
+CREATE TABLE RoleAccess (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    RoleName NVARCHAR(100),
+    PageName NVARCHAR(100)
+);

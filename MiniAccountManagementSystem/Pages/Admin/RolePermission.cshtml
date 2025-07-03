@@ -1,0 +1,35 @@
+﻿@* @page
+@model MiniAccountManagementSystem.Pages.Admin.RolePermissionModel
+@using Microsoft.AspNetCore.Identity
+
+@{
+    ViewData["Title"] = "Role Permission Management";
+}
+
+<h2>Role Permission</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label>Select Role:</label>
+        <select asp-for="SelectedRole" asp-items="Model.RoleList" class="form-control" onchange="this.form.submit()">
+            <option value="">-- Select Role --</option>
+        </select>
+    </div>
+
+    @if (Model.PageList?.Any() == true)
+    {
+        <div class="form-group mt-3">
+            <label>Allow Access to Pages:</label>
+            @foreach (var pageName in Model.PageList)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="SelectedPages" value="@pageName"
+                    @(Model.SelectedPages.Contains(pageName) ? "checked" : "") />
+                    <label class="form-check-label">@pageName</label>
+                </div>
+            }
+        </div>
+        <button type="submit" asp-page-handler="Save" class="btn btn-success mt-3">Save Permission</button>
+    }
+</form>
+ *@

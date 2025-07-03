@@ -5,7 +5,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>User List</h2>
+<h2>User List With Assign User Roll</h2>
 <table class="table">
     <thead>
         <tr>
@@ -19,7 +19,7 @@
             <tr>
                 <td>@user.Email</td>
                 <td>
-                    <a asp-action="ManageRole" asp-controller="UserRole" asp-route-userid="@user.Id" class="btn btn-primary"> Manage Role </a>
+                    <a asp-action="ManageRole" asp-controller="UserRole" asp-route-userid="@user.Id" class="btn btn-primary"> Assign Role </a>
                 </td>
             </tr>
         }

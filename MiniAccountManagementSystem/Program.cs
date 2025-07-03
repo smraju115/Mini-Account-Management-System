@@ -23,6 +23,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 
 
 builder.Services.AddScoped<PageAccessService>(); //call service
+//builder.Services.AddScoped<RolePagePermissionService>();
 
 
 builder.Services.AddRazorPages();

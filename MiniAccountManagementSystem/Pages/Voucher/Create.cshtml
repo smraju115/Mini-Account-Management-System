@@ -32,11 +32,56 @@
         </select>
     </div>
 
-    <hr />
 
-    <h4>Voucher Entries</h4>
+    <div class="d-flex mt-2">
+        <h4>Voucher Entries</h4>
+        <button type="button" id="addRowBtn" class="btn btn-info btn-sm ms-auto">
+            + Add Row
+        </button>
+    </div>
 
-    <table class="table table-bordered">
+    <table class="table table-bordered mt-2" id="voucherEntriesTable">
+        <thead>
+            <tr>
+                <th>Account</th>
+                <th>Debit</th>
+                <th>Credit</th>
+                <th>Remarks</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Voucher.Entries.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <select asp-for="Voucher.Entries[@i].AccountID" class="form-control">
+                            <option value="">-- Select --</option>
+                            @foreach (var acc in Model.AccountList)
+                            {
+                                <option value="@acc.Value">@acc.Text</option>
+                            }
+                        </select>
+                    </td>
+                    <td>
+                        <input asp-for="Voucher.Entries[@i].DebitAmount" class="form-control" type="number" step="0.01" />
+                    </td>
+                    <td>
+                        <input asp-for="Voucher.Entries[@i].CreditAmount" class="form-control" type="number" step="0.01" />
+                    </td>
+                    <td>
+                        <input asp-for="Voucher.Entries[@i].Remarks" class="form-control" />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm removeRowBtn">Remove</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+   @*  <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Account</th>
@@ -70,7 +115,58 @@
                 </tr>
             }
         </tbody>
-    </table>
+    </table> *@
 
-    <button type="submit" class="btn btn-primary">Save Voucher</button>
+    <div class="d-inline-block">
+        <button type="submit" class="btn btn-primary btn-sm">Save Voucher</button>
+        <a asp-page="/Voucher/Index" class="btn btn-danger btn-sm">Cancel</a>
+    </div>
+
 </form>
+
+
+@section Scripts {
+    <script>
+        (function () {
+            let rowIndex = @Model.Voucher.Entries.Count;
+
+            document.getElementById('addRowBtn').addEventListener('click', function () {
+                const tbody = document.querySelector('#voucherEntriesTable tbody');
+                const newRow = document.createElement('tr');
+
+                newRow.innerHTML = `
+                    <td>
+                        <select name="Voucher.Entries[${rowIndex}].AccountID" class="form-control" >
+                            <option value="">-- Select --</option>
+        @foreach (var acc in Model.AccountList)
+        {
+            <text><option value="@acc.Value">@acc.Text</option></text>
+        }
+                        </select>
+                    </td>
+                    <td>
+                        <input name="Voucher.Entries[${rowIndex}].DebitAmount" class="form-control" type="number" step="0.01" />
+                    </td>
+                    <td>
+                        <input name="Voucher.Entries[${rowIndex}].CreditAmount" class="form-control" type="number" step="0.01" />
+                    </td>
+                    <td>
+                        <input name="Voucher.Entries[${rowIndex}].Remarks" class="form-control" />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm removeRowBtn">Remove</button>
+                    </td>
+                `;
+
+                tbody.appendChild(newRow);
+                rowIndex++;
+            });
+
+            document.querySelector('#voucherEntriesTable tbody').addEventListener('click', function (e) {
+                if (e.target && e.target.classList.contains('removeRowBtn')) {
+                    e.target.closest('tr').remove();
+                }
+            });
+        })();
+    </script>
+}

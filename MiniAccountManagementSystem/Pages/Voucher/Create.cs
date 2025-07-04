@@ -26,8 +26,7 @@ namespace MiniAccountManagementSystem.Pages.Voucher
         public void OnGet()
         {
             LoadAccounts();
-            // Initial 2 rows
-            Voucher.Entries.Add(new VoucherEntryModel());
+            // Initial 1 rows added
             Voucher.Entries.Add(new VoucherEntryModel());
         }
 

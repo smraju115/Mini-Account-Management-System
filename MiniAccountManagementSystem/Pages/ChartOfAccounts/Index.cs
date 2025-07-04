@@ -30,11 +30,11 @@ namespace MiniAccountManagementSystem.Pages.ChartOfAccounts
 
 
             //daynamic call
-            var result = await CheckAndRedirect("ChartOfAccounts.Index");
-            if(result != null)
-            {
-                return result;
-            }
+            //var result = await CheckAndRedirect("ChartOfAccounts.Index");
+            //if(result != null)
+            //{
+            //    return result;
+            //}
 
             Account = new();
             AccountsList = _db.GetChartOfAccounts();
@@ -55,7 +55,7 @@ namespace MiniAccountManagementSystem.Pages.ChartOfAccounts
                 return Page();
             }
 
-            // যদি ID = 0, তাহলে new insert
+            // If ID = 0,then new insert
             if (Account.AccountID == 0)
             {
                 _db.AddChartAccount(Account);

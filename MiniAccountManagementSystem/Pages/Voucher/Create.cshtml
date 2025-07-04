@@ -24,8 +24,8 @@
 
     <div class="form-group">
         <label>Voucher Type</label>
-        <select asp-for="Voucher.VoucherType" class="form-control">
-            <option value="">-- Select --</option>
+        <select asp-for="Voucher.VoucherType" class="form-select">
+            <option value=""> Select </option>
             <option>Journal</option>
             <option>Payment</option>
             <option>Receipt</option>
@@ -55,8 +55,8 @@
             {
                 <tr>
                     <td>
-                        <select asp-for="Voucher.Entries[@i].AccountID" class="form-control">
-                            <option value="">-- Select --</option>
+                        <select asp-for="Voucher.Entries[@i].AccountID" class="form-select">
+                            <option value=""> Select </option>
                             @foreach (var acc in Model.AccountList)
                             {
                                 <option value="@acc.Value">@acc.Text</option>

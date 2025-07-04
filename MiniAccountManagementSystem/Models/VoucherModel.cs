@@ -1,9 +1,13 @@
-﻿namespace MiniAccountManagementSystem.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MiniAccountManagementSystem.Models
 {
     public class VoucherEntryModel
     {
         public int AccountID { get; set; }
+        [Range(0, double.MaxValue, ErrorMessage = "Debit amount cannot be negative")]
         public decimal DebitAmount { get; set; }
+        [Range(0, double.MaxValue, ErrorMessage = "Credit amount cannot be negative")]
         public decimal CreditAmount { get; set; }
         public string? Remarks { get; set; }
     }

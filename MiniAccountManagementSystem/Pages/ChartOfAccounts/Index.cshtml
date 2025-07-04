@@ -9,32 +9,42 @@
 
 <form method="post">
     <input type="hidden" asp-for="Account.AccountID" />
-    <label>Account Name:</label>
-    <input asp-for="Account.AccountName" class="form-control" required />
+    <div class="row">
+        <div class="">
+            <label>Account Name:</label>
+            <input asp-for="Account.AccountName" class="form-control" />
+            <span asp-validation-for="Account.AccountName" class="text-danger"></span>
+        </div>
 
-    <label>Account Type:</label>
-    <select asp-for="Account.AccountType" class="form-control">
-        <option>Asset</option>
-        <option>Liability</option>
-        <option>Income</option>
-        <option>Expense</option>
-        <option>Equity</option>
-    </select>
-
-    <label>Parent Account ID:</label>
-    <input asp-for="Account.ParentAccountID" class="form-control" />
-
-    <br />
-
-    @if (Model.Account.AccountID > 0)
-    {
-        <button type="submit" asp-page-handler="Update" class="btn btn-success">Update</button>
-        <a href="/ChartOfAccounts" class="btn btn-secondary">Cancel</a>
-    }
-    else
-    {
-        <button type="submit" class="btn btn-primary">Add</button>
-    }
+        <div class="">
+            <label>Account Type:</label>
+            <select asp-for="Account.AccountType" class="form-select">
+                <option>Asset</option>
+                <option>Liability</option>
+                <option>Income</option>
+                <option>Expense</option>
+                <option>Equity</option>
+            </select>
+        </div>
+        <div class="">
+            <label>Parent Account ID:</label>
+            <input asp-for="Account.ParentAccountID" class="form-control" />
+            <span asp-validation-for="Account.ParentAccountID" class="text-danger"></span>
+        </div>
+    </div>
+   
+    <div class="mt-2">
+            @if (Model.Account.AccountID > 0)
+            {
+                <button type="submit" asp-page-handler="Update" class="btn btn-success">Update</button>
+                <a href="/ChartOfAccounts" class="btn btn-secondary">Cancel</a>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-primary btn-sm col-1">Save</button>
+            }
+    </div>
+   
 </form>
 
 @* <form method="post">
@@ -64,7 +74,8 @@
 
 <hr />
 
-<table class="table table-bordered mt-3">
+<h4 class="text-center">Chart of Accounts List</h4>
+<table class="table table-bordered mt-3 display nowrap" id="example">
     <thead>
         <tr>
             <th>ID</th>
@@ -93,3 +104,18 @@
         }
     </tbody>
 </table>
+
+
+@section Scripts{
+
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+            new DataTable('#example', {
+            layout: {
+                topStart: {
+                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+                }
+            }
+        });
+    </script>
+}

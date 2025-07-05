@@ -30,11 +30,11 @@ namespace MiniAccountManagementSystem.Pages.ChartOfAccounts
 
 
             //daynamic call
-            //var result = await CheckAndRedirect("ChartOfAccounts.Index");
-            //if(result != null)
-            //{
-            //    return result;
-            //}
+            var result = await CheckAndRedirect("ChartOfAccounts.Index");
+            if (result != null)
+            {
+                return result;
+            }
 
             Account = new();
             AccountsList = _db.GetChartOfAccounts();

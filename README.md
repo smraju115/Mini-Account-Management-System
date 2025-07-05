@@ -81,13 +81,44 @@ Password: Admin@123
 
 ## 📸 Screenshots
 
-**Chart of Accounts Tree**
 
- ![coa](screenshots/coa-tree.png) 
+ **Home Page**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_3.jpg) 
+
+**Chart of Accounts Page but this is Authorization Paged for only admin**
+
+ ![coa](ProjectScrenshot/Screenshot_1.jpg) 
 
  **Voucher Entries**
  
- ![voucher](screenshots/voucher.png) 
+ ![voucher](ProjectScrenshot/Screenshot_2.jpg) 
+ 
+  **Voucher List**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_4.jpg) 
+
+   **User List with assign role**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_5.jpg) 
+ 
+  **Manage role with user wise**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_6.jpg) 
+
+ **Page access with role wise**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_7.jpg) 
+
+  **Registration Page with Identity Default**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_8.jpg) 
+
+  **Login Page with Identity Default**
+ 
+ ![voucher](ProjectScrenshot/Screenshot_9.jpg) 
+
+
 
 ---
 

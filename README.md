@@ -1,5 +1,5 @@
 # 💼 Mini-Account-Management-System
-A lightweight and professional **Accounting Web Application** built using **ASP.NET Core Razor Pages** and **SQL Server (Stored Procedures only)**.
+A lightweight and professional **Accounting Web Application** built using **ASP.NET Core Razor Pages** and **SQL Server (Stored Procedures only)** Role Based Assign User and Page Access Control by admin. Data Table view with pdf, excel export. 
 ## 🔧 Technologies Used
 
 - ASP.NET Core Razor Pages (.NET 8)
